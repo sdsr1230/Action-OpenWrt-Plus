@@ -23,17 +23,17 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: master
+  REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
+  REPO_BRANCH: openwrt-19.07
   CONFIG_FILE: config/offical/*.config
   DIY_SH: scripts/offical-openwrt.sh
   FEEDS_CONF: feeds.conf.default
-  SSH_ACTIONS: false
-  KMODS_IN_FIRMWARE: false
+  SSH_ACTIONS: true
+  KMODS_IN_FIRMWARE: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
+  UPLOAD_COWTRANSFER: false
+  UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
 
 jobs:
