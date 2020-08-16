@@ -40,24 +40,11 @@ pushd package/community
 git clone --depth=1 https://github.com/SuLingGG/openwrt-package
 rm -rf openwrt-package/lienol/luci-app-ssr-python-pro-server
 
-# Add mentohust & luci-app-mentohust.
-git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
-git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
-
-# Add ServerChan.
-git clone --depth=1 https://github.com/tty228/luci-app-serverchan
-
-# Add OpenClash.
-git clone --depth=1 https://github.com/vernesong/OpenClash
-
 # Add luci-app-onliner. (need luci-app-nlbwmon)
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
 # Add luci-app-adguardhome.
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome
-
-# Add openwrt-iptvhelper.
-git clone --depth=1 https://github.com/riverscn/openwrt-iptvhelper
 
 # Add luci-app-diskman.
 git clone --depth=1 https://github.com/lisaac/luci-app-diskman
@@ -66,10 +53,6 @@ cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 # Add luci-theme-argon
 git clone -b 19.07_stable --depth=1 https://github.com/jerrykuku/luci-theme-argon
-
-# Add smartdns
-svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
 
 # Add udptools
 git clone --depth=1 https://github.com/bao3/openwrt-udp2raw
