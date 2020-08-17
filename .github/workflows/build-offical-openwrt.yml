@@ -23,7 +23,7 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
+  REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: openwrt-19.07
   CONFIG_FILE: config/offical/*.config
   DIY_SH: scripts/offical-openwrt.sh
