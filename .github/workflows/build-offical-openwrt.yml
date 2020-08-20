@@ -28,7 +28,7 @@ env:
   CONFIG_FILE: config/offical/*.config
   DIY_SH: scripts/offical-openwrt.sh
   FEEDS_CONF: feeds.conf.default
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   KMODS_IN_FIRMWARE: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
