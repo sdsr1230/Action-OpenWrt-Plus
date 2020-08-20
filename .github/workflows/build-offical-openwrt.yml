@@ -23,7 +23,7 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
   REPO_BRANCH: openwrt-19.07
   CONFIG_FILE: config/offical/*.config
   DIY_SH: scripts/offical-openwrt.sh
@@ -59,7 +59,7 @@ jobs:
     - name: Clone Source Code
       run: |
         df -hT $PWD
-        git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
+        git clone --depth 1 $REPO_URL 
 
     - name: Update Feeds
       run: |
